@@ -33,4 +33,4 @@ class ResourceManager
 		
     private: 
         Resource* cos; 
-};
+};// Czy dziala?
