@@ -26,20 +26,6 @@ class ResourceManager
     		return *this;
 		}
 		
-		ResourceManager(ResourceManager&& i)
-		{
-			cos = (i.cos);
-			i.cos = nullptr;
-		}
-		
-		ResourceManager& operator=(ResourceManager&& i)
-    	{
-    		delete cos;
-    		cos = i.cos;
-    		i.cos = nullptr;
-    		return *this;
-		}
-		
 		~ResourceManager()
 		{
 			delete cos;
